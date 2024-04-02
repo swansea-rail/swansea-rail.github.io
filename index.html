@@ -13,35 +13,23 @@
 	<div class="container px-5">
 		<div class="pb-5">
 			<h1 class="pt-3 font-weight-bold fs-2 pb-1">Swansea Railway Verification Group</h1>
-
-			<div x-data="{ navContent: '' }" x-init="
-				fetch('partials/nav.html')
-				.then(response => navContent = response.text())"
-				x-html="navContent" />
-
-			<a href="https://cs.swansea.ac.uk/rail">
-				<img class="mx-auto d-block img-fluid" alt="Train tracks" title="Train tracks" src="images/train-wide.jpg"/>
-			</a>
+			<div x-data="{ navContent: '' }" x-init="fetch('partials/nav.html').then(response => navContent = response.text())" x-html="navContent" />
+			<a href="https://cs.swansea.ac.uk/rail"><img class="mx-auto d-block img-fluid" alt="Train tracks" title="Train tracks" src="images/train-wide.jpg"/></a>
 		</div>
-	<div id="content" class="fs-5">
+		<div id="content" class="fs-5">
+			<h3 class="pb-2"> Welcome </h3>
 
-<h3 class="pb-2"> Welcome </h3>
+			<p>The Swansea Railway Verification Group, supported by about eight academics, was founded in 2007. Its purpose initially was to explore problems posed by Invensys Rail, a multinational technology leader, providing state-of-the-art software-based signalling, communication and control systems that enable the safe and efficient operation of trains in mainline and mass transit networks across the world. Whilst this is still its main focus, its reach and impact has been expanded with projects funded by EPSRC and RSSB.</p>
 
+			<div class="row row-cols-auto justify-content-center align-items-center">
+				<a href="https://www.swansea.ac.uk/"><img src="images/swansea-logo.png" alt="Swansea logo" width="164" height="163"></a>
+				<a href="https://www.mobility.siemens.com/uk/en/portfolio/rail-solutions/automation.html"><img src="images/siemens-logo.png" alt="Siemens logo" width="300" height="47"></a>
+			</div>
 
-<p>The Swansea Railway Verification Group, supported by about eight academics, was founded in 2007. Its purpose initially was to explore problems posed by Invensys Rail, a multinational technology leader, providing state-of-the-art software-based signalling, communication and control systems that enable the safe and efficient operation of trains in mainline and mass transit networks across the world. Whilst this is still its main focus, its reach and impact has been expanded with projects funded by EPSRC and RSSB.</p>
-
-
-<div class="row row-cols-auto justify-content-center align-items-center">
-
-<a href="https://www.swansea.ac.uk/"><img src="images/swansea-logo.png" alt="Swansea logo" width="164" height="163"></a>
-<a href="https://www.mobility.siemens.com/uk/en/portfolio/rail-solutions/automation.html"><img src="images/siemens-logo.png" alt="Siemens logo" width="300" height="47" </a>
-</a>
-
-	</div>
-
-	<div id="footer" class=" py-1 mt-4 srvgfooter">
-		<a class ="fs-6 px-3  py-1 " href="https://cs.swansea.ac.uk/rail" title="Swansea Railway Verification Group"> Swansea Railway Verification Group</a>
-	</div>
+			<div id="footer" class=" py-1 mt-4 srvgfooter">
+				<a class ="fs-6 px-3  py-1 " href="https://cs.swansea.ac.uk/rail" title="Swansea Railway Verification Group"> Swansea Railway Verification Group</a>
+			</div>
+		</div>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
