@@ -1,0 +1,13 @@
+<?php
+function isActive($activePage) {
+	global $currentPage;
+	if ($currentPage===$activePage) {
+  		echo 'active';
+  	}
+}
+?>
+
+<div class="fs-5 border-dark border-top border-bottom">
+	<a class="d-inline-block px-4 py-2 m-0 navbutton <?php isActive('home') ?>" href="https://cs.swansea.ac.uk/rail">Home</a><a class="d-inline-block px-4 py-2 m-0 navbutton <?php isActive('people') ?>" href="https://cs.swansea.ac.uk/rail/people">People</a><a class="d-inline-block px-4 py-2 m-0 navbutton <?php isActive('projects') ?>" href="https://cs.swansea.ac.uk/rail/projects">Projects</a><a class="d-inline-block px-4 py-2 m-0 navbutton <?php isActive('publications') ?>" href="https://cs.swansea.ac.uk/rail/publications">Publications</a><a class="d-inline-block px-4 py-2 m-0 navbutton <?php isActive('tools') ?>" href="https://cs.swansea.ac.uk/rail/tools">Tools</a><a class="d-inline-block px-4 py-2 m-0 navbutton <?php isActive('outreach') ?>" href="https://cs.swansea.ac.uk/rail/outreach">Outreach</a>
+</div>
+

@@ -1,1 +1,52 @@
-Hello World
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title><?php echo($title) ?></title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body  style="font-family: Georgia, 'Bitstream Charter', serif;">
+	<div class="container px-5">
+		<div class="pb-5">
+			<h1 class="pt-3 font-weight-bold fs-2 pb-1">Swansea Railway Verification Group</h1>
+
+			<div x-html="(await axios.get('nav.html')).data" />
+
+			<a href="https://cs.swansea.ac.uk/rail">
+				<img class="mx-auto d-block img-fluid" alt="Train tracks" title="Train tracks" src="images/train-wide.jpg"/>
+			</a>
+		</div>
+	<div id="content" class="fs-5">
+
+		<?php
+	$title = 'Swansea Railway Verification Group';
+	$currentPage='outreach';
+	$currentPage='home';
+	require('partials/html_header.php');
+?>
+
+
+
+<h3 class="pb-2"> Welcome </h3>
+
+
+<p>The Swansea Railway Verification Group, supported by about eight academics, was founded in 2007. Its purpose initially was to explore problems posed by Invensys Rail, a multinational technology leader, providing state-of-the-art software-based signalling, communication and control systems that enable the safe and efficient operation of trains in mainline and mass transit networks across the world. Whilst this is still its main focus, its reach and impact has been expanded with projects funded by EPSRC and RSSB.</p>
+
+
+<div class="row row-cols-auto justify-content-center align-items-center">
+
+<a href="https://www.swansea.ac.uk/"><img src="https://cs.swansea.ac.uk/rail/images/swansea-logo.png" alt="Swansea logo" width="164" height="163"></a>
+<a href="https://www.mobility.siemens.com/uk/en/portfolio/rail-solutions/automation.html"><img src="https://cs.swansea.ac.uk/rail/images/siemens-logo.png" alt="Siemens logo" width="300" height="47" </a>
+</a>
+
+	</div>
+
+	<div id="footer" class=" py-1 mt-4 srvgfooter">
+		<a class ="fs-6 px-3  py-1 " href="https://cs.swansea.ac.uk/rail" title="Swansea Railway Verification Group"> Swansea Railway Verification Group</a>
+	</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
