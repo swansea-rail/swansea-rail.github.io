@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="container px-5">
+	<div class="container px-5" x-cloak>
 		<div class="pb-5">
 			<h1 class="pt-3 font-weight-bold fs-2 pb-1">Swansea Railway Verification Group</h1>
 			<div x-data="{ navContent: '' }" x-init="fetch('partials/nav.html').then(response => navContent = response.text())" x-html="navContent" />
