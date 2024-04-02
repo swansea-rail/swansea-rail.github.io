@@ -3,20 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title><?php echo($title) ?></title>
+	<title>Swansea Railway Verification Group</title>
 
-	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 	<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
 </head>
-<body  style="font-family: Georgia, 'Bitstream Charter', serif;">
+<body>
 	<div class="container px-5">
 		<div class="pb-5">
 			<h1 class="pt-3 font-weight-bold fs-2 pb-1">Swansea Railway Verification Group</h1>
-
-			<div x-html="(await axios.get('partials/nav.html')).data">
-				Waiting LIAM
-			</div>
 
 			<div x-data="{ navContent: '' }" x-init="
 				fetch('partials/nav.html')
@@ -29,15 +25,6 @@
 		</div>
 	<div id="content" class="fs-5">
 
-		<?php
-	$title = 'Swansea Railway Verification Group';
-	$currentPage='outreach';
-	$currentPage='home';
-	require('partials/html_header.php');
-?>
-
-
-<h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
 <h3 class="pb-2"> Welcome </h3>
 
 

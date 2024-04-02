@@ -1,3 +1,7 @@
+body {
+	font-family: Georgia, 'Bitstream Charter', serif;
+}
+
 .navbutton {
 	text-decoration: none;
 	color: #212529;
